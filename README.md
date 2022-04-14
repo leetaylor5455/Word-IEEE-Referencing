@@ -8,7 +8,7 @@ Fixes to Microsoft Word's IEEE bibliography entries to match the IEEE referencin
 2. Unzip the file.
 3. Close Word if you already have it open.
 4. Replace the `BIBFORM.XML` file found in `C:\Program Files (x86)\Microsoft Office\root\Office16\1033\Bibliography\BIBFORM.XML` with the downloaded file. I recommend that you rename the original `BIBFORM.XML` something like `BACKUP_BIBFORM.XML` or keep it elsewhere, rather than overriding it entirely - that way you have a backup.
-5. Add `IEEE_UoS.xsd` to `C:\Users\<username>\AppData\Roaming\Microsoft\Bibliography\Style` and `C:\Program Files (x86)\Microsoft Office\root\Office16\Bibliography\Style` directories. You should see the rest of the .xsd template files for other referencing standards in these folders.
+5. Paste `IEEE_UoS.XSL` to `C:\Users\<username>\AppData\Roaming\Microsoft\Bibliography\Style` and `C:\Program Files (x86)\Microsoft Office\root\Office16\Bibliography\Style` directories. You should see the rest of the .xsd template files for other referencing standards in these folders.
 6. That's it! You should see **IEEE - UOS** appear in your bibliography styles in Word.
 
 ## Usage
@@ -29,5 +29,5 @@ Likewise, if you notice an error in any of the bibliography entries that this ge
 ## Roughly How it Works (if you're interested in adding source types)
 When creating a new source in Word, you must select a source type, this is chosen from a list of source types kept in `BIBFORM.XML`. New source types can be creating by adding `<Source>` Elements. These source types are universal across different referencing standards.
 
-Each referencing standard has a templates file which tells Word how to format the bibliography entries, i.e. `IEEE_UoS.xsd`. These templates determine the information displayed in the bibliography entries, the order, style etc.
+Each referencing standard has a templates file which tells Word how to format the bibliography entries, i.e. `IEEE_UoS.XSL`. These templates determine the information displayed in the bibliography entries, the order, style etc.
 
