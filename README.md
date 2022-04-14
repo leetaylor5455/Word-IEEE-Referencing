@@ -9,7 +9,7 @@ Fixes to Microsoft Word's IEEE bibliography entries to match the IEEE referencin
 3. Close Word if you already have it open.
 4. Replace the `BIBFORM.XML` file found in `C:\Program Files (x86)\Microsoft Office\root\Office16\1033\Bibliography\BIBFORM.XML` with the downloaded file. I recommend that you rename the original `BIBFORM.XML` something like `BACKUP_BIBFORM.XML` or keep it elsewhere, rather than overriding it entirely - that way you have a backup.
 5. Paste `IEEE_UoS.XSL` to `C:\Users\<username>\AppData\Roaming\Microsoft\Bibliography\Style` and `C:\Program Files (x86)\Microsoft Office\root\Office16\Bibliography\Style` directories. You should see the rest of the .xsd template files for other referencing standards in these folders.
-6. That's it! You should see **IEEE - UOS** appear in your bibliography styles in Word.
+6. That's it! You should see **IEEE - UoS** appear in your bibliography styles in Word.
 
 ## Usage
 
