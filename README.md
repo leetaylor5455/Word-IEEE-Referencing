@@ -1,6 +1,22 @@
 # Word-IEEE-Referencing
 Fixes to Microsoft Word's IEEE bibliography entries to match the IEEE referencing standard according to the University of Sheffield referencing guide.
 
+The currently supported source types are:
+
+- Blog
+- Book - Print
+- Book - Electronic
+- Book - Section/Chapter
+- Book - Section/Chapter (Electronic)
+- Journal Article - Print
+- Journal Article - Electronic
+- Podcast
+- Standard 
+- Standard - Electronic
+- Technical Report/Paper
+- Technical Report/Paper (Electronic)
+- Web Page
+
 ## Installation
 **NOTE: I made these changes for Microsoft Word on Windows; I don't know if Word for MacOS uses the same files and if so, what directories those files might be stored in.**
 
