@@ -4,7 +4,7 @@ Fixes to Microsoft Word's IEEE bibliography entries to match the IEEE referencin
 ## Installation
 **NOTE: I made these changes for Microsoft Word on Windows; I don't know if Word for MacOS uses the same files and if so, what directories those files might be stored in.**
 
-1. Download the files by clicking 'Code' and then 'Download as zip'.
+1. Download the files by clicking 'Code' and then 'Download ZIP'.
 2. Unzip the file.
 3. Close Word if you already have it open.
 4. Replace the `BIBFORM.XML` file found in `C:\Program Files (x86)\Microsoft Office\root\Office16\1033\Bibliography\BIBFORM.XML` with the downloaded file. I recommend that you rename the original `BIBFORM.XML` something like `BACKUP_BIBFORM.XML` or keep it elsewhere, rather than overriding it entirely - that way you have a backup.
