@@ -18,7 +18,7 @@ The currently supported source types are:
 - Web Page
 
 ## Installation
-**NOTE: I made these changes for Microsoft Word on Windows; I don't know if Word for MacOS uses the same files and if so, what directories those files might be stored in.**
+**NOTE: I did this for Microsoft Word on Windows; I don't know if Word for MacOS uses the same files and if so, what directories those files might be stored in. If you manage to get this working on MacOS, please contact me with the file locations so I can add a guide for MacOS**
 
 1. Download the files by clicking 'Code' and then 'Download ZIP'.
 2. Unzip the file.
