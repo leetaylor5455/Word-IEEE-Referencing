@@ -652,7 +652,7 @@
 							<b:ImportantField>
 								<xsl:text>b:Title</xsl:text>
 							</b:ImportantField>
-							<b:ImportantField>
+							<!-- <b:ImportantField>
 								<xsl:text>b:Year</xsl:text>
 							</b:ImportantField>
 							<b:ImportantField>
@@ -660,7 +660,7 @@
 							</b:ImportantField>
 							<b:ImportantField>
 								<xsl:text>b:Day</xsl:text>
-							</b:ImportantField>
+							</b:ImportantField> -->
 							<b:ImportantField>
 								<xsl:text>b:URL</xsl:text>
 							</b:ImportantField>
