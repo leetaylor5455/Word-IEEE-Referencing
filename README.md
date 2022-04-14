@@ -1,4 +1,4 @@
-# Word-IEEE-Referencing
+# Word IEEE Referencing
 Fixes to Microsoft Word's IEEE bibliography entries to match the IEEE referencing standard according to the University of Sheffield referencing guide.
 
 The currently supported source types are:
