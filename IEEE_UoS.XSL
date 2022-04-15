@@ -7096,7 +7096,8 @@
 				<xsl:value-of select="b:StateProvince"/>
 				<xsl:choose>
 					<xsl:when test="$cPublisher>0">
-						<xsl:call-template name ="templ_prop_EnumSeparator"/>
+						<!-- <xsl:call-template name ="templ_prop_EnumSeparator"/> -->
+						<xsl:call-template name ="templ_prop_ListSeparator"/>
 						<xsl:call-template name ="templ_prop_Space"/>
 					</xsl:when>
 					<xsl:when test="$cPublisher=0 and ($cYear!=0 or $cPages!=0)">
@@ -7128,7 +7129,8 @@
 				<xsl:value-of select="b:StateProvince"/>
 				<xsl:choose>
 					<xsl:when test="$cPublisher>0">
-						<xsl:call-template name ="templ_prop_EnumSeparator"/>
+						<!-- <xsl:call-template name ="templ_prop_EnumSeparator"/> -->
+						<xsl:call-template name ="templ_prop_ListSeparator"/>
 						<xsl:call-template name ="templ_prop_Space"/>
 					</xsl:when>
 					<xsl:when test="$cPublisher=0 and ($cYear!=0 or $cPages!=0)">
