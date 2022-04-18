@@ -22,10 +22,11 @@ The currently supported source types are:
 
 1. Download the files by clicking 'Code' and then 'Download ZIP'.
 2. Unzip the file.
-3. Close Word if you already have it open.
-4. Replace the `BIBFORM.XML` file found in `C:\Program Files (x86)\Microsoft Office\root\Office16\1033\Bibliography\BIBFORM.XML` with the downloaded file. I recommend that you rename the original `BIBFORM.XML` something like `BACKUP_BIBFORM.XML` or keep it elsewhere, rather than overriding it entirely - that way you have a backup.
-5. Paste `IEEE_UoS.XSL` to `C:\Users\<username>\AppData\Roaming\Microsoft\Bibliography\Style` and `C:\Program Files (x86)\Microsoft Office\root\Office16\Bibliography\Style` directories. You should see the rest of the .xsd template files for other referencing standards in these folders.
-6. That's it! Start up Word and you should see **IEEE - UoS** appear in your bibliography styles in Word.
+3. Go to the directory `C:\Program Files (x86)\Microsoft Office\root\Office16\1033`
+4. Right click on the folder called `Bibliography`, click 'Properties', go to the 'Security' tab and select 'Edit'. Allow the 'Users' group full control with the check box.
+5. Replace the `BIBFORM.XML` file found in `C:\Program Files (x86)\Microsoft Office\root\Office16\1033\Bibliography` with the downloaded file. I recommend that you rename the original `BIBFORM.XML` something like `BACKUP_BIBFORM.XML` or keep it elsewhere, rather than overriding it entirely - that way you have a backup.
+6. Paste `IEEE_UoS.XSL` to `C:\Users\<username>\AppData\Roaming\Microsoft\Bibliography\Style` and `C:\Program Files (x86)\Microsoft Office\root\Office16\Bibliography\Style` directories. You should see the rest of the .xsd template files for other referencing standards in these folders.
+7. (Re)start Word and you should see **IEEE - UoS** appear in your bibliography styles in Word.
 
 ## Usage
 
