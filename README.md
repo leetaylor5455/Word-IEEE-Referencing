@@ -20,7 +20,7 @@ The currently supported source types are:
 ## Installation
 **NOTE: I did this for Microsoft Word on Windows; I don't know if Word for MacOS uses the same files, and if so, the directories they're stored in. If you manage to get this working on MacOS, please contact me with the file locations so I can add instructions to this guide.**
 
-1. Download the files by clicking 'Code' and then 'Download ZIP' and extract it.
+1. Download the files by clicking 'Code' and then 'Download ZIP' and extract them.
 2. Open Notepad as administrator (search notepad in Windows search, right click on it and select 'Run as administrator')
 3. Select File -> Open `BIBFORM.XML` file found in `C:\Program Files (x86)\Microsoft Office\root\Office16\1033\Bibliography` (show 'All files'). I recommend that you make a copy of the original, renaming it something like `BACKUP_BIBFORM.XML` or move it elsewhere, in case you need to revert back.
 4. Select the entire contents of the file (shortcut ctrl+A) and delete it.
