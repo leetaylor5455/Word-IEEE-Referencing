@@ -23,7 +23,7 @@ The currently supported source types are:
 1. Download the files by clicking 'Code' and then 'Download ZIP'.
 2. Unzip the file.
 3. Open Notepad as administrator (search notepad in Windows search, right click on it and select 'Run as administrator')
-6. Select File -> Open `BIBFORM.XML` file found in `C:\Program Files (x86)\Microsoft Office\root\Office16\1033\Bibliography` (show 'All files *.*'). I recommend that you make a copy of the original `BIBFORM.XML`, renaming it something like `BACKUP_BIBFORM.XML` or move it elsewhere, in case you need to revert back.
+6. Select File -> Open `BIBFORM.XML` file found in `C:\Program Files (x86)\Microsoft Office\root\Office16\1033\Bibliography` (show 'All files'). I recommend that you make a copy of the original `BIBFORM.XML`, renaming it something like `BACKUP_BIBFORM.XML` or move it elsewhere, in case you need to revert back.
 7. Select the entire contents of the file with the shortcut ctrl+A and delete it.
 8. Open the downloaded `BIBFORM.XML` in Notepad, copy its entire contents and paste it in the original, newly cleared file **(it is important to replace the code inside the original file rather than replacing the whole file because Word will see the new one as an 'imposter')**
 9. Select File -> Save
