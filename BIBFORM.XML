@@ -96,6 +96,7 @@
 			<DataTag>b:StandardNumber</DataTag>
 			<Sample>Example: ISBN/ISSN</Sample>
 		</Tag>
+		
 		<Tag>
 			<Label>Pages</Label>
 			<DataTag>b:Pages</DataTag>
