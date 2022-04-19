@@ -195,6 +195,36 @@
 							</b:ImportantField>
 						</xsl:when>
 
+						<xsl:when test="b:GetImportantFields/b:SourceType='VideoSharingWebsite'">
+							<b:ImportantField>
+								<xsl:text>b:Author/b:Author/b:NameList</xsl:text>
+							</b:ImportantField>
+							<b:ImportantField>
+								<xsl:text>b:Year</xsl:text>
+							</b:ImportantField>
+							<b:ImportantField>
+								<xsl:text>b:Title</xsl:text>
+							</b:ImportantField>
+							<b:ImportantField>
+								<xsl:text>b:Month</xsl:text>
+							</b:ImportantField>
+							<b:ImportantField>
+								<xsl:text>b:Day</xsl:text>
+							</b:ImportantField>
+							<b:ImportantField>
+								<xsl:text>b:URL</xsl:text>
+							</b:ImportantField>
+							<b:ImportantField>
+								<xsl:text>b:YearAccessed</xsl:text>
+							</b:ImportantField>
+							<b:ImportantField>
+								<xsl:text>b:MonthAccessed</xsl:text>
+							</b:ImportantField>
+							<b:ImportantField>
+								<xsl:text>b:DayAccessed</xsl:text>
+							</b:ImportantField>
+						</xsl:when>
+
 						<xsl:when test="b:GetImportantFields/b:SourceType='Podcast'">
 							<b:ImportantField>
 								<xsl:text>b:Author/b:Author/b:NameList</xsl:text>
@@ -7912,6 +7942,41 @@
 		</xsl:variable>
 
 		<xsl:choose>
+        	<xsl:when test="$SourceType = 'VideoSharingWebsite'">
+                <xsl:element name="tr">
+					<xsl:element name="td">
+						<xsl:attribute name="valign">
+							<xsl:value-of select="'top'"/>
+						</xsl:attribute>
+						<xsl:attribute name="width">
+							<xsl:value-of select="'1%'"/>
+						</xsl:attribute>
+						<xsl:element name="p">
+							<xsl:call-template name = "BibAddParagraphAttributes"/>
+							<xsl:call-template name="BibRefOrder"/>
+						</xsl:element>
+					</xsl:element>
+					<xsl:element name="td">
+						<xsl:attribute name="style">
+							<xsl:value-of select="'text-align:left'"/>
+						</xsl:attribute>
+						<xsl:attribute name="valign">
+							<xsl:value-of select="'top'"/>
+						</xsl:attribute>
+						<xsl:element name="p">
+							<xsl:call-template name = "BibAddParagraphAttributes"/>
+							<xsl:call-template name = "BibDisplayAuthorWebsite"/>
+                            <i>
+                                <xsl:call-template name = "BibDisplayTitle"/>
+							</i>
+							<xsl:call-template name = "BibDisplayDayMonthYearWebSiteJournal"/>
+							[Video]. 
+                            <xsl:call-template name ="BibDisplayAccessedDates"/>. 
+							<xsl:call-template name ="BibDisplayURL"/>
+						</xsl:element>
+					</xsl:element>
+				</xsl:element>
+			</xsl:when>
         	<xsl:when test="$SourceType = 'Blog'">
                 <xsl:element name="tr">
 					<xsl:element name="td">
@@ -8923,6 +8988,7 @@
 			    $SourceType = 'ReportElectronic' or
 			    $SourceType = 'Standard' or
 			    $SourceType = 'StandardElectronic' or
+			    $SourceType = 'VideoSharingWebsite' or
 				$SourceType = 'DocumentFromInternetSite' or
 			    $SourceType = 'Art' or
 			    $SourceType = 'SoundRecording' or
