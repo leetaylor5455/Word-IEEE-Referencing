@@ -96,7 +96,7 @@
 			<DataTag>b:StandardNumber</DataTag>
 			<Sample>Example: ISBN/ISSN</Sample>
 		</Tag>
-		
+
 		<Tag>
 			<Label>Pages</Label>
 			<DataTag>b:Pages</DataTag>
@@ -1300,6 +1300,140 @@
 			<Label>Standard Number</Label>
 			<DataTag>b:StandardNumber</DataTag>
 			<Sample>Example: ISBN/ISSN</Sample>
+		</Tag>
+		<Tag>
+			<Label>Comments</Label>
+			<DataTag>b:Comments</DataTag>
+			<Sample>Enter comments about this source.</Sample>
+		</Tag>
+		<Tag>
+			<Label>Medium</Label>
+			<DataTag>b:Medium</DataTag>
+			<Sample>Example: Document</Sample>
+		</Tag>
+		<Tag>
+			<Label>Year Accessed</Label>
+			<DataTag>b:YearAccessed</DataTag>
+			<Sample>Example: 2006</Sample>
+		</Tag>
+		<Tag>
+			<Label>Month Accessed</Label>
+			<DataTag>b:MonthAccessed</DataTag>
+			<Sample>Example: January</Sample>
+		</Tag>
+		<Tag>
+			<Label>Day Accessed</Label>
+			<DataTag>b:DayAccessed</DataTag>
+			<Sample>Example: 1</Sample>
+		</Tag>
+		<Tag>
+			<Label>URL</Label>
+			<DataTag>b:URL</DataTag>
+			<Sample>Example: http://www.adatum.com</Sample>
+		</Tag>
+		<Tag>
+			<Label>DOI</Label>
+			<DataTag>b:DOI</DataTag>
+			<Sample>Example: 10.1000/182</Sample>
+		</Tag>
+	</Source>
+	<Source type="VideoSharingWebsite" display="Video - Sharing Website">
+		<Tag>
+			<Label>Creator/Presenter</Label>
+			<DataTag>b:Author/b:Author/b:NameList</DataTag>
+			<Sample>Example: Joe Rogan, Noel Miller, Cody Ko</Sample>
+			<ToString>Author2String.XSL</ToString>
+			<ToXML>Author2XML.XSL</ToXML>
+			<Author>Yes</Author>
+			<OrgAuthor>Yes</OrgAuthor>
+		</Tag>
+		<Tag>
+			<Label>Title of Video</Label>
+			<DataTag>b:Title</DataTag>
+			<TitlePriority>1</TitlePriority>
+			<Sample>Example: How to Write Bibliographies</Sample>
+		</Tag>
+		<Tag>
+			<Label>Year</Label>
+			<DataTag>b:Year</DataTag>
+			<Sample>Example: 2006</Sample>
+		</Tag>
+		<Tag>
+			<Label>Month</Label>
+			<DataTag>b:Month</DataTag>
+			<Sample>Example: January</Sample>
+		</Tag>
+		<Tag>
+			<Label>Day</Label>
+			<DataTag>b:Day</DataTag>
+			<Sample>Example: 1</Sample>
+		</Tag>
+		<Tag>
+			<Label>City</Label>
+			<DataTag>b:City</DataTag>
+			<Sample>Example: Chicago</Sample>
+		</Tag>
+		<Tag>
+			<Label>U.S. State if Necessary</Label>
+			<DataTag>b:StateProvince</DataTag>
+			<Sample>NY</Sample>
+		</Tag>
+		<Tag>
+			<Label>Country/Region</Label>
+			<DataTag>b:CountryRegion</DataTag>
+			<Sample>Example: United States of America</Sample>
+		</Tag>
+		<Tag>
+			<Label>Publisher</Label>
+			<DataTag>b:Publisher</DataTag>
+			<Sample>Example: Adventure Works Press</Sample>
+		</Tag>
+		<Tag>
+			<Label>Editor</Label>
+			<DataTag>b:Author/b:Editor/b:NameList</DataTag>
+			<Sample>Example: Kramer, James D; Chen, Jacky</Sample>
+			<ToString>Author2String.XSL</ToString>
+			<ToXML>Author2XML.XSL</ToXML>
+			<Author>Yes</Author>
+		</Tag>
+		<Tag>
+			<Label>Volume</Label>
+			<DataTag>b:Volume</DataTag>
+			<Sample>Example: III</Sample>
+		</Tag>
+		<Tag>
+			<Label>Number of Volumes</Label>
+			<DataTag>b:NumberVolumes</DataTag>
+			<Sample>Example: IV</Sample>
+		</Tag>
+		<Tag>
+			<Label>Translator</Label>
+			<DataTag>b:Author/b:Translator/b:NameList</DataTag>
+			<Sample>Example: Kramer, James D; Chen, Jacky</Sample>
+			<ToString>Author2String.XSL</ToString>
+			<ToXML>Author2XML.XSL</ToXML>
+			<Author>Yes</Author>
+		</Tag>
+		<Tag>
+			<Label>Short Title</Label>
+			<DataTag>b:ShortTitle</DataTag>
+			<TitlePriority>2</TitlePriority>
+			<Sample>Example: Bibliographies</Sample>
+		</Tag>
+		<Tag>
+			<Label>Standard Number</Label>
+			<DataTag>b:StandardNumber</DataTag>
+			<Sample>Example: BS EN 45545-7</Sample>
+		</Tag>
+		<Tag>
+			<Label>Pages</Label>
+			<DataTag>b:Pages</DataTag>
+			<Sample>Example: 50-62</Sample>
+		</Tag>
+		<Tag>
+			<Label>Edition</Label>
+			<DataTag>b:Edition</DataTag>
+			<Sample>Example: 2nd</Sample>
 		</Tag>
 		<Tag>
 			<Label>Comments</Label>
