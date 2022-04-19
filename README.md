@@ -15,7 +15,7 @@ The currently supported source types are:
 - Standard - Electronic
 - Technical Report/Paper
 - Technical Report/Paper (Electronic)
-- Video - Sharing Website (e.g. Youtube)
+- Video - Sharing Website (e.g. YouTube)
 - Web Page
 
 ## Installation
