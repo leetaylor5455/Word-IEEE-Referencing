@@ -8,6 +8,7 @@ The currently supported source types are:
 - Book - Electronic
 - Book - Section/Chapter
 - Book - Section/Chapter (Electronic)
+- Image/Figure (Online Collection/Social Media Site)
 - Journal Article - Print
 - Journal Article - Electronic
 - Podcast
