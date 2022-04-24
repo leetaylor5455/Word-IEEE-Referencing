@@ -12,7 +12,7 @@
 	<xsl:template name="Start">
 		<xsl:choose>
 			<xsl:when test="b:Version">
-				<xsl:text>2022.0.1</xsl:text>
+				<xsl:text>2022.0.0</xsl:text>
 			</xsl:when>
 
 			<xsl:when test="b:XslVersion">
@@ -189,6 +189,36 @@
 							</b:ImportantField>
 							<b:ImportantField>
 								<xsl:text>b:BlogName</xsl:text>
+							</b:ImportantField>
+							<b:ImportantField>
+								<xsl:text>b:DayAccessed</xsl:text>
+							</b:ImportantField>
+						</xsl:when>
+
+						<xsl:when test="b:GetImportantFields/b:SourceType='ImageFigure'">
+							<b:ImportantField>
+								<xsl:text>b:Author/b:Author/b:NameList</xsl:text>
+							</b:ImportantField>
+							<b:ImportantField>
+								<xsl:text>b:Year</xsl:text>
+							</b:ImportantField>
+							<b:ImportantField>
+								<xsl:text>b:Title</xsl:text>
+							</b:ImportantField>
+							<b:ImportantField>
+								<xsl:text>b:ImageDescription</xsl:text>
+							</b:ImportantField>
+							<b:ImportantField>
+								<xsl:text>b:URL</xsl:text>
+							</b:ImportantField>
+							<b:ImportantField>
+								<xsl:text>b:YearAccessed</xsl:text>
+							</b:ImportantField>
+							<b:ImportantField>
+								<xsl:text>b:MonthAccessed</xsl:text>
+							</b:ImportantField>
+							<b:ImportantField>
+								<xsl:text>b:ProductionCompany</xsl:text>
 							</b:ImportantField>
 							<b:ImportantField>
 								<xsl:text>b:DayAccessed</xsl:text>
@@ -2938,6 +2968,28 @@
 				</xsl:choose>
 			</xsl:when>
 		</xsl:choose>
+	</xsl:template>
+
+	<xsl:template name ="BibDisplayYearImageDescription">
+		<xsl:variable name="cImageDescription">
+			<xsl:value-of select="count(b:ImageDescription)"/>
+		</xsl:variable>
+		<xsl:variable name="cYear">
+			<xsl:value-of select="count(b:Year)"/>
+		</xsl:variable>
+		<xsl:choose>
+			<xsl:when test ="$cYear!=0">
+				<xsl:value-of select="b:Year"/>
+				<xsl:call-template name ="templ_prop_Space"/>
+			</xsl:when>
+		</xsl:choose>
+		<xsl:choose>
+			<xsl:when test ="$cImageDescription!=0">
+				[<xsl:value-of select="b:ImageDescription"/>].
+				<xsl:call-template name ="templ_prop_Space"/>
+			</xsl:when>
+		</xsl:choose>
+		
 	</xsl:template>
 
 	<xsl:template name ="BibDisplayProductionCompanywebsite">
@@ -8014,6 +8066,39 @@
 					</xsl:element>
 				</xsl:element>
 			</xsl:when>
+        	<xsl:when test="$SourceType = 'ImageFigure'">
+                <xsl:element name="tr">
+					<xsl:element name="td">
+						<xsl:attribute name="valign">
+							<xsl:value-of select="'top'"/>
+						</xsl:attribute>
+						<xsl:attribute name="width">
+							<xsl:value-of select="'1%'"/>
+						</xsl:attribute>
+						<xsl:element name="p">
+							<xsl:call-template name = "BibAddParagraphAttributes"/>
+							<xsl:call-template name="BibRefOrder"/>
+						</xsl:element>
+					</xsl:element>
+					<xsl:element name="td">
+						<xsl:attribute name="style">
+							<xsl:value-of select="'text-align:left'"/>
+						</xsl:attribute>
+						<xsl:attribute name="valign">
+							<xsl:value-of select="'top'"/>
+						</xsl:attribute>
+						<xsl:element name="p">
+							<xsl:call-template name = "BibAddParagraphAttributes"/>
+							<xsl:call-template name = "BibDisplayAuthorWebsite"/>
+							<xsl:call-template name = "BibDisplayTitleWebSite"/>							
+							<xsl:call-template name = "BibDisplayYearImageDescription"/>
+							<xsl:call-template name = "BibDisplayProductionCompanySRec"/>
+							<xsl:call-template name ="BibDisplayURLOnly"/>
+                            (<xsl:call-template name ="BibDisplayAccessedDates"/>). 
+						</xsl:element>
+					</xsl:element>
+				</xsl:element>
+			</xsl:when>
         	<xsl:when test="$SourceType = 'Podcast'">
                 <xsl:element name="tr">
 					<xsl:element name="td">
@@ -8979,6 +9064,7 @@
                 $SourceType = 'BookSection' or
                 $SourceType = 'BookSectionElectronic' or
                 $SourceType = 'Film' or
+                $SourceType = 'ImageFigure' or
 				$SourceType = 'Case' or
                 $SourceType = 'JournalArticle' or
                 $SourceType = 'ArticleInAPeriodical' or
